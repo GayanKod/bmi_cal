@@ -24,6 +24,56 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             SizedBox(height:20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                    width: 130,
+                    child: TextField(
+                        style: TextStyle(
+                            fontSize: 42,
+                            fontWeight: FontWeight.w300,
+                            color: accentHexColor
+
+                        ),
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Height",
+                          hintStyle: TextStyle(
+                            fontSize: 42,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.white.withOpacity(.8)
+                          ),
+                        )
+                    ),
+                ),
+
+                Container(
+                    width: 130,
+                    child: TextField(
+                        style: TextStyle(
+                            fontSize: 42,
+                            fontWeight: FontWeight.w300,
+                            color: accentHexColor
+
+                        ),
+                        keyboardType: TextInputType.number,
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Weight",
+                          hintStyle: TextStyle(
+                            fontSize: 42,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.white.withOpacity(.8)
+                          ),
+                        )
+                    ),
+                ),
+              ] 
+
+
+            )
           ]
         )
       )
